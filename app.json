@@ -1,0 +1,31 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/logs/logs"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#ffffff",
+		"navigationBarTitleText": "盖汽",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar":{
+		"selectedColor":"#000000",
+		"borderStyle":"white",
+		"backgroundColor":"#ededed",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"assets/icons/home.png",
+				"selectedIconPath":"assets/icons/home-active.png"
+			},
+			{
+				"text": "故事",
+				"pagePath": "pages/logs/logs",
+				"iconPath": "assets/icons/event.png",
+				"selectedIconPath": "assets/icons/event-active.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json"
+}

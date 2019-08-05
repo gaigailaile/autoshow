@@ -1,0 +1,21 @@
+.button{
+	display: inline-block;
+	margin: 4px;
+	background-color:#e0e1e2;
+	padding: 0 24px;
+	color: rgba(0, 0, 0, 0.6);
+	border-radius: 2px;
+	font-size: 32rpx;
+	font-weight: bold;
+	transition: 0.3s all;
+}
+.button.primary{
+	background-color: #000000;
+	color: rgba(255, 255, 255, 0.9);
+}
+.button::after{
+	content: none;
+}
+.button-hover{
+	opacity: 0.75;
+}

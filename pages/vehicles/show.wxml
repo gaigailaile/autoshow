@@ -1,4 +1,4 @@
-<!-- <view class='section'>
+<view class='section'>
 	<view class='cover'>
 		<image src='{{entity.image}}' mode='aspectFill'></image>
 		<view class='content'>
@@ -33,9 +33,9 @@
 	</view>
 	<view class='action'>
 		<view class='description'>{{entity.description}}</view>
-		<button class='button primary'>预约试驾</button>
+		<button class='button primary' bindtap='testDrive'>预约试驾</button>
 	</view>
-</view> -->
+</view>
 <swiper class='section story' indicator-dots='{{true}}'>
 	<block wx:for='{{entity.meta.exterior_design}}' wx:key="id">
 		<swiper-item>
@@ -44,7 +44,12 @@
 				<view class='header'>{{item.header}}</view>
 				<view class='description'>{{item.description}}</view>
 			</view>
-			<image src='{{item.image}}' mode='scpectFill'></image>
+			<image 
+				src='{{item.image}}' 
+				mode='scpectFill' 
+				bindtap='preview'
+				data-slides='exterior_design'
+				data-index='{{index}}'></image>
 		</swiper-item>
 	</block>
 </swiper>
@@ -56,7 +61,12 @@
 				<view class='header'>{{item.header}}</view>
 				<view class='description'>{{item.scription}}</view>
 			</view>
-			<image src='{{item.image}}' mode='scpectFill'></image>
+			<image 
+				src='{{item.image}}' 
+				mode='scpectFill'
+				bindtap='preview'
+				data-slides='interior_design'
+				data-index='{{index}}'></image>
 		</swiper-item>
 	</block>
 </swiper>

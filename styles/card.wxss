@@ -6,6 +6,19 @@
 	margin-bottom: 16px;
 	transition: 0.5s all;
 }
+.card image{
+	position: relative;
+}
+.card .label{
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+	font-size: 24rpx;
+	padding: 4rpx 8rpx;
+	background: rgba(0, 0, 0, 0.85);
+	color: rgba(255, 255, 255, 0.9);
+	border-radius: 2px;
+}
 .card.hover{
 	box-shadow: 0 32px 28px rgba(0, 0, 0, 0.06);
 }

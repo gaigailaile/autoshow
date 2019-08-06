@@ -1,8 +1,9 @@
 {
 	"pages": [
-		"pages/vehicles/show",
+		"pages/stories/index",
 		"pages/index/index",
-		"pages/logs/logs"
+		"pages/vehicles/show",
+		"pages/stories/show"
 	],
 	"window": {
 		"navigationBarBackgroundColor": "#ffffff",
@@ -16,13 +17,13 @@
 		"list": [
 			{
 				"text": "首页",
-				"pagePath": "pages/vehicles/show",
+				"pagePath": "pages/index/index",
 				"iconPath": "assets/icons/home.png",
 				"selectedIconPath": "assets/icons/home-active.png"
 			},
 			{
 				"text": "故事",
-				"pagePath": "pages/logs/logs",
+				"pagePath": "pages/stories/index",
 				"iconPath": "assets/icons/event.png",
 				"selectedIconPath": "assets/icons/event-active.png"
 			}

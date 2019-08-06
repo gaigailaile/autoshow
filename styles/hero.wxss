@@ -2,6 +2,13 @@
 .hero image,.hero video{
 	height: 38.2vh;
 }
+.hero.small .header{
+	font-size: 56rpx;
+	margin-bottom: 48rpx;
+}
+.hero.small .sub-header{
+	font-size: 24rpx;
+}
 .hero .content{
 	padding-top:10%;
 }

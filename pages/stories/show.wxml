@@ -1,0 +1,14 @@
+<view class='section hero small'>
+	<video 
+		src='{{ entity.video }}'
+		objectFit='cover'
+		duration='{{duration_row}}'
+		controls='{{true}}'></video>
+	<view class='content centered'>
+		<view class='header'>
+			{{entity.header}}
+			<view class='sub-header'>{{entity.original_header}}</view>
+		</view>
+		<view class='dexcription'>{{entity.description}}</view>
+	</view>	
+</view>
